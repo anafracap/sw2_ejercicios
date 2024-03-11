@@ -1,0 +1,1 @@
+doc("hamlet.xml")/PLAY/ACT/SCENE/count(SPEECH/LINE)

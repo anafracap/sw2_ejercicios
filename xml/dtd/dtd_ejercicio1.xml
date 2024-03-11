@@ -1,0 +1,15 @@
+<?xml version="1.0"?> 
+<!DOCTYPE TVSCHEDULE SYSTEM "dtd_ejercicio1.dtd"> 
+<TVSCHEDULE NAME="PROGRAMACION">
+    <CHANNEL CHAN="LA 1">
+        <BANNER> 123 </BANNER>
+        <DAY>
+            <DATE> 21st January </DATE>
+            <PROGRAMSLOT VTR="ABC">
+                <TIME> 10:00 </TIME>
+                <TITLE RATING="10"> 123 </TITLE>
+                <DESCRIPTION> 123 </DESCRIPTION>
+            </PROGRAMSLOT>
+        </DAY>
+    </CHANNEL>
+</TVSCHEDULE>

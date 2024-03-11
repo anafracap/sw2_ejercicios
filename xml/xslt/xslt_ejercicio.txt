@@ -1,0 +1,584 @@
+<html>
+   <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <title>World countries population</title>
+      <style type="text/css">
+        .hidden{
+          display: none;
+        }
+      </style>
+    </head>
+   <body>
+      <label for="country">Choose a country:</label>
+      <select name="country" id="countries">
+         <option value="ABW">Aruba</option>
+         <option value="AFE">Africa Eastern and Southern</option>
+         <option value="AFG">Afghanistan</option>
+         <option value="AFW">Africa Western and Central</option>
+         <option value="AGO">Angola</option>
+         <option value="ALB">Albania</option>
+         <option value="AND">Andorra</option>
+         <option value="ARB">Arab World</option>
+         <option value="ARE">United Arab Emirates</option>
+         <option value="ARG">Argentina</option>
+         <option value="ARM">Armenia</option>
+         <option value="ASM">American Samoa</option>
+         <option value="ATG">Antigua and Barbuda</option>
+         <option value="AUS">Australia</option>
+         <option value="AUT">Austria</option>
+         <option value="AZE">Azerbaijan</option>
+         <option value="BDI">Burundi</option>
+         <option value="BEL">Belgium</option>
+         <option value="BEN">Benin</option>
+         <option value="BFA">Burkina Faso</option>
+         <option value="BGD">Bangladesh</option>
+         <option value="BGR">Bulgaria</option>
+         <option value="BHR">Bahrain</option>
+         <option value="BHS">Bahamas, The</option>
+         <option value="BIH">Bosnia and Herzegovina</option>
+         <option value="BLR">Belarus</option>
+         <option value="BLZ">Belize</option>
+         <option value="BMU">Bermuda</option>
+         <option value="BOL">Bolivia</option>
+         <option value="BRA">Brazil</option>
+         <option value="BRB">Barbados</option>
+         <option value="BRN">Brunei Darussalam</option>
+         <option value="BTN">Bhutan</option>
+         <option value="BWA">Botswana</option>
+         <option value="CAF">Central African Republic</option>
+      </select>
+      <div class="hidden" id="ABW">
+         <h2>Aruba</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>54208</td>
+            </tr>
+            <tr>
+               <td>1961</td>
+               <td>55434</td>
+            </tr>
+            <tr>
+               <td>1962</td>
+               <td>56234</td>
+            </tr>
+            <tr>
+               <td>1963</td>
+               <td>56699</td>
+            </tr>
+            <tr>
+               <td>1964</td>
+               <td>57029</td>
+            </tr>
+            <tr>
+               <td>1965</td>
+               <td>57357</td>
+            </tr>
+            <tr>
+               <td>1966</td>
+               <td>57702</td>
+            </tr>
+            <tr>
+               <td>1967</td>
+               <td>58044</td>
+            </tr>
+            <tr>
+               <td>1968</td>
+               <td>58377</td>
+            </tr>
+            <tr>
+               <td>1969</td>
+               <td>58734</td>
+            </tr>
+            <tr>
+               <td>1970</td>
+               <td>59070</td>
+            </tr>
+            <tr>
+               <td>1971</td>
+               <td>59442</td>
+            </tr>
+            <tr>
+               <td>1972</td>
+               <td>59849</td>
+            </tr>
+            <tr>
+               <td>1973</td>
+               <td>60236</td>
+            </tr>
+            <tr>
+               <td>1974</td>
+               <td>60527</td>
+            </tr>
+            <tr>
+               <td>1975</td>
+               <td>60653</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="AFE">
+         <h2>Africa Eastern and Southern</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>130836765</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="AFG">
+         <h2>Afghanistan</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>8996967</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="AFW">
+         <h2>Africa Western and Central</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>96396419</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="AGO">
+         <h2>Angola</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>5454938</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="ALB">
+         <h2>Albania</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>1608800</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="AND">
+         <h2>Andorra</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>13410</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="ARB">
+         <h2>Arab World</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>92197715</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="ARE">
+         <h2>United Arab Emirates</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>92417</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="ARG">
+         <h2>Argentina</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>20481781</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="ARM">
+         <h2>Armenia</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>1874119</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="ASM">
+         <h2>American Samoa</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>20127</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="ATG">
+         <h2>Antigua and Barbuda</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>54132</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="AUS">
+         <h2>Australia</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>10276477</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="AUT">
+         <h2>Austria</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>7047539</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="AZE">
+         <h2>Azerbaijan</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>3895398</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="BDI">
+         <h2>Burundi</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>2797925</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="BEL">
+         <h2>Belgium</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>9153489</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="BEN">
+         <h2>Benin</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>2431617</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="BFA">
+         <h2>Burkina Faso</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>4829289</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="BGD">
+         <h2>Bangladesh</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>48013505</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="BGR">
+         <h2>Bulgaria</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>7867374</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="BHR">
+         <h2>Bahrain</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>162429</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="BHS">
+         <h2>Bahamas, The</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>109532</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="BIH">
+         <h2>Bosnia and Herzegovina</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>3225664</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="BLR">
+         <h2>Belarus</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>8198000</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="BLZ">
+         <h2>Belize</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>92068</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="BMU">
+         <h2>Bermuda</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>44400</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="BOL">
+         <h2>Bolivia</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>3656961</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="BRA">
+         <h2>Brazil</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>72179235</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="BRB">
+         <h2>Barbados</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>230985</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="BRN">
+         <h2>Brunei Darussalam</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>81707</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="BTN">
+         <h2>Bhutan</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>223284</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="BWA">
+         <h2>Botswana</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>502733</td>
+            </tr>
+         </table>
+      </div>
+      <div class="hidden" id="CAF">
+         <h2>Central African Republic</h2>
+         <table>
+            <tr>
+               <th>Year</th>
+               <th>Population</th>
+            </tr>
+            <tr>
+               <td>1960</td>
+               <td>1501668</td>
+            </tr>
+         </table>
+      </div>
+      <script type="text/javascript">
+    window.addEventListener('load', function(event) {
+      let select = document.getElementById("countries");
+      let selectData = select.value;
+      toggleClass(selectData);
+      select.addEventListener('change', function(event) {
+        toggleClass(selectData);
+        selectData = select.value;
+        toggleClass(selectData);
+      });
+    });
+
+    function toggleClass(id){
+      let elem = document.getElementById(id);
+      elem.classList.toggle("hidden");
+    }
+  </script>
+   </body>
+</html>

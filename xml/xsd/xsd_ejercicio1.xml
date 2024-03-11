@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items xmlns="https://www.w3schools.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema- instance" xsi:schemaLocation=" https://www.w3schools.com/ xml xsd_ejercicio1.xsd">
+  <item>
+    <name>Item 1</name>
+    <photo>http://example.com/photo1.png</photo>
+    <tags>Tag1, Tag2</tags>
+    <diameter>32</diameter>
+    <weight>540</weight>
+    <price>60</price>
+    <size>Big</size>
+  </item>
+  <item>
+    <name>Item 2</name>
+    <photo>http://example.com/photo2.png</photo>
+    <tags>Tag1</tags>
+    <diameter>23</diameter>
+    <weight>340</weight>
+    <price>50.1</price>
+  </item>
+</items>

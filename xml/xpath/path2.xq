@@ -1,0 +1,1 @@
+count(doc("hamlet.xml")/PLAY/ACT/SCENE/SPEECH[SPEAKER='HAMLET'])

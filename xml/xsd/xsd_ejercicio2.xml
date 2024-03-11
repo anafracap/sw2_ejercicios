@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Orderdetails xmlns="https://www.w3schools.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema- instance" xsi:schemaLocation=" https://www.w3schools.com/ xml xsd_ejercicio2.xsd">
+  <Customer id="123">
+    <destination Country="Spain" Delivdate="12/12/12">AAA</destination>
+  </Customer>
+</Orderdetails>

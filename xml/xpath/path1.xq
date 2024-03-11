@@ -1,0 +1,1 @@
+doc("hamlet.xml")/PLAY/ACT[TITLE = 'ACT II']/SCENE/TITLE
