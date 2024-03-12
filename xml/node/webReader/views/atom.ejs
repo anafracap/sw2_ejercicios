@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <h1><%= title %></h1>
+        <p>Welcome to <%= title %></p>
+        <form method="get" action="/atom">
+            <label for="url">Atom URL:</label>
+            <input type="text" name="url">
+            <input type="submit" name=""/>
+        </form>
+        <% if(data != ''){ %>
+            <div>
+                <% data.feed.entry.forEach(function(entry){ %>
+                    <div class="container-fluid clear">
+                        <h2><%= entry.title %></h2>
+                        <div><%- entry.description %></div>
+                        <div><a href="<%= entry.link %>">Seguir leyendo...</a></div>
+                    </div>
+                <% }); %>
+            </div>
+        <% } %>
+    </body>
+</html>
+  
