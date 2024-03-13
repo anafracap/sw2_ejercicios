@@ -1,0 +1,56 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema#",
+    "$id": "https://example.com/heroes.schema.json",
+    "type": "object",
+    "title": "Super hero squad",
+    "description": "Super hero squad information",
+    "required": ["squadName", "homeTown", "formed", "secretBase", "active", "members"],
+    "properties": {
+      "squadName": {
+        "type": "string",
+        "description": "Squad name"
+      },
+      "homeTown": {
+        "type": "string",
+        "description": "Hometown"
+      },
+      "formed": {
+        "type": ["number"],
+        "description": "Year formed"
+      },
+      "secretBase": {
+        "type": "string",
+        "description": "Hometown"
+      },
+      "active": {
+        "type": "boolean",
+        "description": "Are they active?"
+      },
+      "members": {
+        "type": "array",
+        "items": { "$ref": "#/$defs/member" }
+      }
+    },
+    "$defs": {
+      "member": {
+        "type": "object",
+        "title": "Member of squad",
+        "description": "Details for member of squad",
+        "required": ["name",  "age", "secretIdentity", "powers"],
+        "properties": {
+            "name": { "type": "string", "description": "Name of the member"},
+            "age": { "type": "number", "description": "Age of the member", "minimum": 1 },
+            "secretIdentity": { "type": "string", "description": "Real name of the member" },
+            "members": {
+                "type": "array",
+                "items": { 
+                    "type": "string",
+                    "minItems": 1,
+                    "uniqueItems": true
+
+                }
+            }
+        }
+      }
+    }
+}
