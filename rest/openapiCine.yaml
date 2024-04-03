@@ -1,0 +1,173 @@
+openapi: 3.1.0
+info:
+  title: API REST de un cine
+  version: 1.0.0
+paths:
+  /cartelera:
+    get:
+      summary: Listado de películas
+      description: Obtiene una lista de películas en cartelera.
+      responses:
+        '200':
+          description: Éxito. Devuelve la lista de películas.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/cartelera"
+    post:
+      summary: Añadir película
+      description: Añade una nueva película a la cartelera.
+      responses:
+        '201':
+          description: Creado. Devuelve la URI de la nueva película creada.
+  /cartelera/{id}:
+    get:
+      summary: Información de una película
+      description: Obtiene detalles de una película específica.
+      parameters:
+        - $ref: "#/components/parameters/idPelicula"
+      responses:
+        '200':
+          description: Éxito. Devuelve la información de la película.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/pelicula"
+    put:
+      summary: Modificar película
+      description: Actualiza los detalles de una película existente.
+      parameters:
+        - $ref: "#/components/parameters/idPelicula"
+      responses:
+        '200':
+          description: Éxito. Película modificada correctamente.
+    delete:
+      summary: Eliminar película
+      description: Elimina una película de la cartelera.
+      parameters:
+        - $ref: "#/components/parameters/idPelicula"
+      responses:
+        '204':
+          description: Éxito. Película eliminada correctamente.
+  /sesiones:
+    get:
+      summary: Información de las sesiones
+      description: Obtiene detalles de las sesiones disponibles.
+      responses:
+        '200':
+          description: Éxito. Devuelve la lista de sesiones.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/sesiones"
+    post:
+      summary: Añadir sesión
+      description: Añade una nueva sesión a la cartelera.
+      responses:
+        '201':
+          description: Creado. Devuelve la URI de la nueva sesión creada.
+  /sesion/{id}:
+    get:
+      summary: Información de una sesión
+      description: Obtiene detalles de una sesión específica.
+      parameters:
+        - $ref: "#/components/parameters/idSesion"
+      responses:
+        '200':
+          description: Éxito. Devuelve la información de la sesión.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/sesion"
+    put:
+      summary: Modificar la sesión
+      description: Actualiza los detalles de una sesión existente.
+      parameters:
+        - $ref: "#/components/parameters/idSesion"
+      responses:
+        '200':
+          description: Éxito. Sesión modificada correctamente.
+    delete:
+      summary: Eliminar sesión
+      description: Elimina una sesión de las disponibles.
+      parameters:
+        - $ref: "#/components/parameters/idSesion"
+      responses:
+        '204':
+          description: Éxito. Película eliminada correctamente.
+components:
+  parameters:
+    idPelicula:
+      name: id
+      in: path
+      required: true
+      description: ID de la película
+      schema:
+        type: integer
+    idSesion:
+      name: id
+      in: path
+      required: true
+      description: ID de la sesión
+      schema:
+        type: integer
+  schemas:
+    cartelera:
+      type: object
+      properties:
+        peliculas:
+          type: array
+          items:
+            $ref: "#/components/schemas/pelicula"
+    pelicula:
+      type: object
+      properties:
+        id:
+          type: integer
+        titulo:
+          type: string
+        descripcion:
+          type: string
+        duracion:
+          type: string
+        casting:
+          type: array
+          items:
+            type: string
+        valoraciones:
+          type: array
+          items:
+            type: object
+        sesiones:
+          type: array
+          items:
+            type: object
+            properties:
+              idioma:
+                type: string
+              fecha:
+                type: string
+              hora:
+                type: string
+    sesiones:
+        type: object
+        properties:
+          peliculas:
+            type: array
+            items:
+              $ref: "#/components/schemas/sesion"
+    sesion:
+      type: object
+      properties:
+        id:
+          type: integer
+        idioma:
+                type: string
+        fecha:
+          type: string
+        hora:
+          type: string
+        pelicula:
+          type: string
+        sala:
+          type: string
